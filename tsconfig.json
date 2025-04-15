@@ -14,7 +14,7 @@
     
     /* TypeRoots and Types configuration */
     "typeRoots": ["./node_modules/@types", "./src/types"],
-  //  "types": ["node", "express"],
+   "types": ["node", "express"],
     
     /* Paths configuration (if needed) */
     "baseUrl": ".",
