@@ -16,7 +16,7 @@ app.use(helmet());
 app.use(morgan("tiny"));
 app.use(cors(
     {
-        origin: 'http://localhost:5173', // Allow only this domain
+        origin: 'https://chatty-m2mp.vercel.app', // Allow only this domain
         methods: 'GET,POST',
         allowedHeaders: 'Content-Type,Authorization'  , 
         credentials: true  
