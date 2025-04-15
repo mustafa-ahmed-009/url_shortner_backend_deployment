@@ -6,6 +6,6 @@ const router = Router() ;
 router.post("/" ,createNewUrlValidator ,authenticate,createNewShortendedUrl)
 router.post("/nonLoggedCreation" ,createNewUrlValidator ,createNewShortendedUrl)
 router.post("/sync",  authenticate,syncUrls)
-router.get("/" ,authenticate,getUserUrls )
+router.get("/urls" ,authenticate,getUserUrls )
 router.get("/:slug" ,redirectUser )
 export default router
