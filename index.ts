@@ -29,7 +29,7 @@ app.use(cookieParser())
 dbConnection();
 
 // --- 3. API Routes ---
-app.use("/api/v1/urls", urlRoutes); // Good practice to version your API
+app.use("/u", urlRoutes); // Good practice to version your API
 app.use("/api/v1/auth", authRoutes); // Good practice to version your API
 // // --- Undefined Route Handler (404) ---
 // app.all("*", (req: Request, res: Response, next: NextFunction) => {
