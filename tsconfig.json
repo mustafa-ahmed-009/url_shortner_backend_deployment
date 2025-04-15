@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "skipLibCheck": true,
+    
+    /* TypeRoots and Types configuration */
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+  //  "types": ["node", "express"],
+    
+    /* Paths configuration (if needed) */
+    "baseUrl": ".",
+    "paths": {
+      "*": ["types/*"]
+    }
+  },
+  "include": ["./**/*.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules"]
+}
